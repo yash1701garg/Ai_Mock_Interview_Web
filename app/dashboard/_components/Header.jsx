@@ -61,7 +61,7 @@ function Header() {
           <li className={linkStyle('/dashboard')}>Dashboard</li>
         </Link>
         <Link href="/dashboard/questions">
-          <li className={linkStyle('/dashboard/questions')}>Question</li>
+          <li className={linkStyle('/dashboard/questions')}>Contact us</li>
         </Link>
         <Link href="/dashboard/upgrade">
           <li className={linkStyle('/dashboard/upgrade')}>Upgrade</li>
