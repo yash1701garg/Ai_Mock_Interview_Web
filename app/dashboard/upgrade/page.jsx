@@ -46,7 +46,7 @@ export default function UpgradePage() {
                                 Question {index + 1}: {item.question}
                             </h2>
                             <p className="text-sm text-gray-500">
-                                <strong>Your Answer:</strong> {item?.correctAnswer}
+                                <strong>Correct Answer:</strong> {item?.correctAnswer}
                             </p>
                         </div>
                     ))}
