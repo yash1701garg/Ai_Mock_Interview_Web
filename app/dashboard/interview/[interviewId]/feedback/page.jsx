@@ -36,8 +36,9 @@ function Feedback() {
   };
 
    // Calculate overall rating
-   const totalRating = feedbackList.reduce((acc, curr) => acc + (curr.rating || 0), 0);
-   const averageRating = feedbackList.length ? (totalRating / feedbackList.length).toFixed(1) : 0;
+   const totalRating = feedbackList.reduce((acc, curr) => acc + ((curr.rating || 0) / 100), 0);
+    const averageRating = feedbackList.length ? (totalRating / feedbackList.length).toFixed(1) : 0;
+
 
   return (
     <div className='p-10'>
@@ -51,7 +52,7 @@ function Feedback() {
         <>
           <h2 className='font-bold text-3xl text-green-600'>Congratulations!</h2>
           <h2 className='font-bold text-2xl'>Here is an interview feedback</h2>
-          <h2 className='text-blue-600 text-lg my-3'>Your overall Rating: <strong>{averageRating/1000}/10</strong></h2>
+          <h2 className='text-blue-600 text-lg my-3'>Your overall Rating: <strong>{averageRating}/10</strong></h2>
           <h2 className='text-sm text-gray-500'>Find below the question with correct answer</h2>
 
           {feedbackList.map((item, index) => (
