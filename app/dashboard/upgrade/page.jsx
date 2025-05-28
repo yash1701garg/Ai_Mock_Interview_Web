@@ -12,7 +12,6 @@
 import { useEffect, useState } from 'react'
 import { db } from '@/utils/db'
 import { UserAnswer } from '@/utils/schema'
-import { Button } from '@/components/ui/button'
 
 export default function UpgradePage() {
     const [questions, setQuestions] = useState([])
